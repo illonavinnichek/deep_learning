@@ -1,0 +1,18 @@
+#The number n ⩽ 10^5 is given. Find the n Fibbonacci number.  
+#Since this number can be very large, print its remainder modulo 10^7
+
+def fibonacci(n, modulo=10 ** 7):
+    if n <= 1:
+        return n
+
+#find the first two terms of the sequence 
+   
+    first, second = 1, 1
+    for _ in range(2, n + 1):
+        third = (first + second) % modulo
+        first, second = second, third
+
+    return third % modulo
+
+
+print(fibonacci(10))

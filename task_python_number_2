@@ -1,0 +1,9 @@
+import math
+number_ten = int(input(''))
+count = 0
+
+for i in range(1, number_ten + 1):
+    if math.isqrt(i)**2 == i or round(i**(1/3))**3 == i:
+        count += 1
+
+print(count)

@@ -1,0 +1,10 @@
+#implement a function cmp_prev(val)
+#that will return True if the value of val is greater than
+#the sum of the two previous values of val when the same function was called, 
+#and False otherwise
+a, b = 0, 0
+def cmp_prev(val):
+    global a, b
+    s = a + b
+    a, b = b, val
+    return val > s

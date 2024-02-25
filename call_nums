@@ -1,0 +1,9 @@
+#a function that will return the number of previous calls of the number
+
+def call_nums():
+    if not hasattr(call_nums, 'calls'):
+        call_nums.calls = 0
+    call_nums.calls += 1
+    return call_nums.calls - 1
+
+print(call_nums())

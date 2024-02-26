@@ -1,0 +1,28 @@
+def func_transformating(string):
+    transformated_string = string.replace("")
+    return transformated_string
+
+
+
+def Set(func):
+#обновляет фун преобразов строки
+#предполагается что здесь установлена функция преобразования с помощью set
+    def update_func(string):
+        return func(string)
+    return update_func
+
+
+
+
+
+def Compute(String):
+# рассчитывает и возвращвет значение func(string)
+#updated_func = set(my_function)
+#рассчитываем и возвращаем значение func(string)
+    return updated_func
+
+
+
+updated_func = Set(func_transformating)
+result = Compute("cd8d")
+print(result)
